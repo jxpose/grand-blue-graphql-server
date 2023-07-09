@@ -1,0 +1,17 @@
+#import ./diver/diver.graphqls
+
+type Query {
+    getProducts: [Product]
+    getProduct(productId: String!): Product
+
+    getDivers: [Diver]
+    getDiver(diverId: String!): Diver
+}
+
+type Product {
+    seq: ID!
+    productId: String!
+    productName: String!
+    productDescription: String!
+    deleteFlag: Boolean!
+}

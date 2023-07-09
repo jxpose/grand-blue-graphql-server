@@ -1,0 +1,6 @@
+type Diver {
+    diverId: String!
+    diverName: String!
+    divingLevel: Int!
+    divingLicenseNumber: String!
+}
