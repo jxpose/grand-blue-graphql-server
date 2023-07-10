@@ -1,5 +1,3 @@
-#import ./diver/diver.graphqls
-
 type Query {
     getProducts: [Product]
     getProduct(productId: String!): Product
@@ -8,10 +6,14 @@ type Query {
     getDiver(diverId: String!): Diver
 }
 
-type Product {
-    seq: ID!
-    productId: String!
-    productName: String!
-    productDescription: String!
-    deleteFlag: Boolean!
+type Mutation {
+    addDiver(diverName: String!, divingLevel: Int, divingLicenseNumber: String): Diver
 }
+
+#type Product {
+#    seq: ID!
+#    productId: String!
+#    productName: String!
+#    productDescription: String!
+#    deleteFlag: Boolean!
+#}

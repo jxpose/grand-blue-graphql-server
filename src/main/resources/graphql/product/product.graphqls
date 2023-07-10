@@ -1,0 +1,7 @@
+type Product {
+    seq: ID!
+    productId: String!
+    productName: String!
+    productDescription: String!
+    deleteFlag: Boolean!
+}

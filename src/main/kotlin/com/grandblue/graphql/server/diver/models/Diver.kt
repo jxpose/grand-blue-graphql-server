@@ -1,4 +1,4 @@
-package com.grandblue.graphql.server.product.models
+package com.grandblue.graphql.server.diver.models
 
 import com.grandblue.graphql.server.jpa.entities.DiverEntity
 import java.io.Serializable
